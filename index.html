@@ -24,6 +24,13 @@
     <div ng-controller="MainController">
       <div class="container">
         <h2>{{ title }}</h2>
+        <h2 class="about">{{ gegevens.title }}</h2>
+<p class="name">Naam: {{ gegevens.name | uppercase }}</p>
+<p class="dateofbirth">Geboortedatum: {{ gegevens.dateofbirth | date }}</p>
+<p class="nationality">Nationaliteit: {{ gegevens.nationality }}</p>
+<p class="adress">Adres: {{ gegevens.adress }}</p>
+<p class="email">E-mail: {{ gegevens.email }}></p>
+<p class="phone">Telefoon: {{ gegevens.phone }}</p>
         <!--div ng-repeat="gegeven in gegevens">
           <about-app info="gegeven"></about-app>
         </div-->
